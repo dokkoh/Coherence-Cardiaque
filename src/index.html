@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/src/assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/src/assets/styles/reset.css">
+  <link rel="stylesheet" href="/src/assets/styles/index.scss">
+  <script src="/src/assets/script/app.js" defer type="module"></script>
+  <title>Mon assistant de cohérence cardiaque</title>
+</head>
+
+<body>
+  <header role="banner">
+    <h1>Application de Cohérence Cardiaque</h1>
+  </header>
+  <main role="main">
+    <section role="region" id="graph">
+      <div class="animation">
+        <!-- emplacement de l'animation -->
+      </div>
+    </section>
+    <section role="region" id="controls">
+      <button id="start">Commencer</button>
+      <button id="stop">Arrêter</button>
+      <form role="form" id="config">
+        <div class="config-row"> 
+          <label> 
+            <span class="config-legend">Durée</span> 
+            <input name="duration" type="range" value="3" min="1" max="5" step="1"> 
+          </label> 
+          <input aria-hidden="true" name="duration-number" type="number" value="3" min="1" max="5" step="1"> min </div>
+        <div class="config-row"> 
+          <label>
+            <span class="config-legend">Temps de respiration(inspiration/expiration)</span>
+            <select name="breath-ratio">
+              <option value="animation-6-4">6/4</option>
+              <option selected value="animation-5-5">5/5</option>
+              <option value="animation-4-6">4/6</option>
+              <option value="animation-3-7">3/7</option>
+            </select> secondes 
+          </label>
+          </div>
+      </form>
+      <p id="instructions">Respirez profondément et régulièrement pour suivre le cercle.</p>
+    </section>
+    <section role="region" class="segment">
+      <h2 class="segment-title">Présentation</h2>
+      <p class="segment-paragraph">Cet assistant va vous permettre de réaliser un exercice de cohérence cardiaque. Cette
+        pratique prometteuse vise à apporter des bienfaits au quotidien en terme d'apaisement, de concentration et de
+        sérénité.</p>
+      <p class="segment-paragraph">Le but est de répéter des cycles de respiration en calant son rythme sur le disque à
+        l'écran. Par exemple, en 5/5, on inspire 5 secondes par le nez puis on expire 5 secondes par la bouche comme si on soufflait dans une
+        paille. L'exercice se réalise de préférence en position assise.</p>
+    </section>
+  </main>
+  <footer role="contentinfo">
+    <p>© 2023 - Application de Cohérence Cardiaque</p>
+  </footer>
+</body>
+
+</html>

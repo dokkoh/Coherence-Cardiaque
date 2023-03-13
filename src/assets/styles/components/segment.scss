@@ -1,0 +1,11 @@
+.segment {
+    background-color: #7f8bce55;
+    &-title{
+        padding: 1rem;
+        font-weight: bold;
+    }
+    &-paragraph{
+        padding: 1rem;
+        text-align: justify;
+    }
+}
