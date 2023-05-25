@@ -1,6 +1,6 @@
 # Cohérence cardiaque
 
-Développer un site pour réliser la cohérence cardiaque.
+Développer un site pour réaliser la cohérence cardiaque.
 
 Projet en cours d'optimisation.
 
