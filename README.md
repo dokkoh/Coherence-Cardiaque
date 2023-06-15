@@ -1,6 +1,6 @@
 # Cohérence cardiaque
 
-[Visiter le site](https://coherence-cardiaque-rust.vercel.app/))
+[Visiter le site](https://coherence-cardiaque-rust.vercel.app/)
 
 Développer un site pour réaliser la cohérence cardiaque.
 
